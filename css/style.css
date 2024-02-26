@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: rgb(52, 161, 194);
+    background-color: rgb(182, 205, 228);
     align-items: center;
     justify-content: space-evenly;   
 }
@@ -30,7 +30,7 @@ body{
 }
 
 .nav a{
-    color: rgba(72, 191, 191, 0.815);
+    color: rgba(8, 61, 97, 0.815);
     text-decoration: none;
     font-family: "Latops";
     font-weight:bold;
@@ -45,10 +45,11 @@ ul{
 }
 
 h1{
-    color: white;
+    color: rgb(206, 156, 162);
     font-family: "Latops";
     font-size: 80px;
     text-align: center;
+    margin: 30px;
 }
 
 .vidimg{
@@ -65,6 +66,33 @@ h1{
    
 }
 
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "C C P P"
+      "C C S S"
+      "R GU H D";
+      margin: 30px;
+  }
+  
+  .C { grid-area: C; }
+  
+  .R { grid-area: R; }
+  
+  .S { grid-area: S; }
+  
+  .GU { grid-area: GU; }
+  
+  .H { grid-area: H; }
+  
+  .D { grid-area: D; }
+  
+  .P { grid-area: P; }
+  
+  
 p{
     margin-left: 20%;
     margin-right: 20%;
@@ -72,7 +100,7 @@ p{
 }
 
 .footer{
-    background-color:#6a5583;
+    background-color:rgba(8, 61, 97, 0.815);
     display:flex;
     flex-direction: row;
     height: 100px;
