@@ -54,6 +54,11 @@ h1{
     margin: 30px;
 }
 
+h5{
+    font-size: 100px;
+
+}
+
 .vidimg{
     display: block;
     margin-left: auto;
@@ -68,6 +73,8 @@ h1{
    
 }
 
+
+
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -77,6 +84,18 @@ h1{
       "C C P P"
       "C C S S"
       "R GU H D";
+      margin-left: 7%;
+  }
+
+  .container2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "A B"
+      "A Z"
+      ;
       margin-left: 7%;
   }
  
@@ -99,7 +118,14 @@ h1{
   .D { grid-area: D; }
   
   .P { grid-area: P; }
+
+  .A { grid-area: A; }
   
+  .B { grid-area: B; }
+
+  .Z { grid-area: Z; }
+  
+
   
 p{
     margin-left: 20%;
@@ -123,7 +149,33 @@ p{
           
         }
    
-}
+}}
+
+@media (max-width:700px ){
+    @media (max-width: 700px) {
+        .container2 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "A"
+                "B"  
+                "Z"
+          
+        }
+   
+}}
+
+
+@media (max-width:800px ){
+    @media (max-width: 800px) {
+        .nav {
+            height: 200px;    
+          
+        }
+   
+}}
+
+
 .footer{
     background-color:rgba(8, 61, 97, 0.815);
     display:flex;
@@ -135,7 +187,7 @@ p{
     font-size: 30px;
     font-family: "Latotitles";
     color: white;
-    position: fixed;
+    position: relative;
     bottom: 0;
     right: 0;
     width: 100%;
