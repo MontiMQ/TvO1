@@ -14,7 +14,9 @@
 body{
     background-color: rgb(195, 211, 226);
     align-items: center;
-    justify-content: space-evenly;   
+    justify-content: space-evenly; 
+    margin-top: 100px;  
+    margin-bottom: 100px;
 
 }
 
@@ -23,11 +25,12 @@ body{
     display:flex;
     flex-direction: row;
     height:100px;
-    width: auto;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
     font-size: 30px;
- 
+    position: fixed;
+    top: 0%;
 }
 
 .nav a{
@@ -133,9 +136,13 @@ p{
     font-family: "Latops";
 }
 
+@media (max-width: 800px){
+    body {
+        margin-top: 200px;
+    }
+}
 @media (max-width:700px ){
-    @media (max-width: 700px) {
-        .container {
+           .container {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(7, 1fr);
             grid-template-areas:
@@ -149,10 +156,9 @@ p{
           
         }
    
-}}
+}
 
 @media (max-width:700px ){
-    @media (max-width: 700px) {
         .container2 {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(3, 1fr);
@@ -163,17 +169,18 @@ p{
           
         }
    
-}}
+}
 
 
-@media (max-width:800px ){
-    @media (max-width: 800px) {
+@media (max-width:794px ){
+    
         .nav {
             height: 200px;    
           
         }
    
-}}
+}
+
 
 
 .footer{
@@ -187,7 +194,8 @@ p{
     font-size: 30px;
     font-family: "Latotitles";
     color: white;
-    position: relative;
+    position: fixed
+;
     bottom: 0;
     right: 0;
     width: 100%;
