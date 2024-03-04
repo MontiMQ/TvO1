@@ -157,13 +157,14 @@ h5{
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(7, 1fr);
             grid-template-areas:
-                "C"
-                "R"
-                "S"
-                "GU"
-                "H"
-                "D"
-                "P"     
+                "eSkel"
+                "pUl"
+                "rEn"
+                "cIrc"
+                "gU"
+                "hEm"
+                "dIg"
+                   
           
         }
    
