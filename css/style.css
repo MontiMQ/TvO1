@@ -82,9 +82,9 @@ h1{
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "C C P P"
-      "C C S S"
-      "R GU H D";
+      "eSkel eSkel pUl pUl"
+      "eSkel eSkel rEn rEn"
+      "cIrc gU hEm dIg";
       margin-left: 7%;
   }
 
@@ -94,25 +94,19 @@ h1{
     object-fit: cover;
     }
 
-  .C { grid-area: C; }
+  .eSkel { grid-area: eSkel; }
   
-  .R { grid-area: R; }
+  .cIrc { grid-area: cIrc; }
   
-  .S { grid-area: S; }
+  .rEn { grid-area: rEn; }
   
-  .GU { grid-area: GU; }
+  .gU { grid-area: gU; }
   
-  .H { grid-area: H; }
+  .hEm { grid-area: hEm; }
   
-  .D { grid-area: D; }
+  .dIg { grid-area: dIg; }
   
-  .P { grid-area: P; }
-
-  .A { grid-area: A; }
-  
-  .B { grid-area: B; }
-
-  .Z { grid-area: Z; }
+  .pUl { grid-area: pUl; }
   
 
 
