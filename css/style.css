@@ -90,7 +90,22 @@ h5{
       margin-left: 7%;
   }
 
+  .container3 {
+    color: black;
+    font-size:medium;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+  }
  
+  .col-md-auto{
+    margin-top: 40px;
+  }
+
+  .col{
+    margin-top: 40px;
+  }
   .accordion {
     margin-top: 50px;
     margin-left: 50px;
