@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+.fa-bell {
+  color: #29a5c7;
+  font-size: 20;
+  padding: 0 5px; }
+
 .nav {
   background-color: white;
   display: flex;
@@ -9,10 +15,11 @@
   font-size: 30px;
   position: fixed;
   top: 0%;
-  z-index: 3; }
+  z-index: 3;
+  border: 2px solid #98e3d6; }
 
 .nav a {
-  color: rgba(8, 61, 97, 0.815);
+  color: #33767b;
   text-decoration: none;
   font-family: "Latops";
   font-weight: bold; }
@@ -28,7 +35,7 @@ ul {
   padding: 0; }
 
 body {
-  background-color: #c3d3e2;
+  background-color: white;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 100px;
@@ -41,7 +48,7 @@ p {
 
 /* Titulo */
 h1 {
-  color: #ce9ca2;
+  color: #d66d50;
   font-family: "Latops";
   font-size: 80px;
   font-weight: bold;
@@ -132,7 +139,7 @@ h5 {
     height: 200px; } }
 
 .footer {
-  background-color: rgba(8, 61, 97, 0.815);
+  background-color: #98e3d6;
   display: flex;
   flex-direction: row;
   height: 100px;

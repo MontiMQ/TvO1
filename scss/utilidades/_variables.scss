@@ -1,0 +1,20 @@
+// Paleta de Colores
+$teal:#33767b;
+$ocean:#015a6c;
+$terracotta: #d66d50;
+$peach: #fdb9aa;
+$turquiose:#98e3d6;
+$lblue:#d1eee9;
+
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+$fuente-titulo: "Anta", sans-serif;
+
+//Iconos
+.fa-bell{
+    color: rgb(41, 165, 199);
+    font-size: 20;
+    padding: 0 5px;
+}

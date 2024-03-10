@@ -10,10 +10,12 @@
     position: fixed;
     top: 0%;
     z-index: 3;
+   
+    border: 2px solid $turquiose;
 }
 
 .nav a{
-    color: rgba(8, 61, 97, 0.815);
+    color: $teal;
     text-decoration: none;
     font-family: "Latops";
     font-weight:bold;

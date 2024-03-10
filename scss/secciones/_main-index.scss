@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(195, 211, 226);
+    background-color: white;
     align-items: center;
     justify-content: space-evenly; 
     margin-top: 100px;  
@@ -20,7 +20,7 @@ p{
 
 /* Titulo */
 h1{
-    color: rgb(206, 156, 162);
+    color: $terracotta;
     font-family: "Latops";
     font-size: 80px;
     font-weight: bold;
