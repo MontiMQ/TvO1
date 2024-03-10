@@ -1,0 +1,28 @@
+.nav{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    height:100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    position: fixed;
+    top: 0%;
+    z-index: 3;
+}
+
+.nav a{
+    color: rgba(8, 61, 97, 0.815);
+    text-decoration: none;
+    font-family: "Latops";
+    font-weight:bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.ulc{
+    text-align: center;
+}

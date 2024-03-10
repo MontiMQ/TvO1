@@ -1,0 +1,43 @@
+.nav {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+  position: fixed;
+  top: 0%;
+  z-index: 3; }
+
+.nav a {
+  color: rgba(8, 61, 97, 0.815);
+  text-decoration: none;
+  font-family: "Latops";
+  font-weight: bold; }
+
+ul {
+  list-style-type: none; }
+
+.ulc {
+  text-align: center; }
+
+.footer {
+  background-color: rgba(8, 61, 97, 0.815);
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+  font-family: "Latotitles";
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border: 1px solid black;
+  align-items: center;
+  margin-top: auto; }
