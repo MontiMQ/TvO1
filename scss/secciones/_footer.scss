@@ -1,29 +1,18 @@
 .footer{
-    background-color:$turquiose;
-    display:flex;
-    flex-direction: row;
-    height: 100px;
-    width: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 30px;
-    font-family: "Latotitles";
-    color: white;
-    position: fixed
-;
+    @extend .barra;
+    background-image: linear-gradient(to left, $lblue, $turquiose);
+    width: auto; 
     bottom: 0;
     right: 0;
     width: 100%;
-    border: 1px solid black;
-    align-items: center;
+    border: 2px solid $turquiose;
     margin-top: auto;
 }
 
 .agranda {
-    width: 400px;       
- }
- .agranda:hover {
+    width: 400px;
+    &:hover{       
     width: 500px;
  }
- 
+}
  

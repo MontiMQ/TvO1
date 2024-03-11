@@ -16,16 +16,14 @@ p{
 /* Titulo */
 h1{
     color: $terracotta;
-    font-family: "Latops";
+    font-family: $fuente-titulo;
     font-size: 80px;
     font-weight: bold;
     text-align: center;
     margin: 30px;
 }
 
-.animado2{
-  animation: latido 3s 1;
-}
+
 
 /* Pagina index */
 .vidimg{
@@ -109,6 +107,7 @@ h5{
 @media (max-width: 800px){
     body {
         margin-top: 200px;
+        
     }
 }
 @media (max-width:700px ){
@@ -140,3 +139,5 @@ h5{
         }
    
 }
+
+

@@ -1,33 +1,18 @@
 .nav{
+    @extend .barra;
     background-color: white;
-    display:flex;
-    flex-direction: row;
     text-wrap: wrap;
-    height:100px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100%;  
     font-size: 30px;
-    position: fixed;
     top: 0%;
     z-index: 3;
-   
-    border: 2px solid $turquiose;
-}
-
-.nav a{
+        
+    a{
     color: $teal;
     text-decoration: none;
-    font-family: "Latops";
+    font-family: $fuente-nav;
     font-weight:bold;
 }
-
-ul{
-    list-style-type: none;
-}
-
-.ulc{
-    text-align: center;
 }
 
 .latido{

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
 .fa-bell {
   color: #29a5c7;
   font-size: 20;
@@ -16,32 +17,27 @@
   100% {
     width: 40px; } }
 
-.nav {
-  background-color: white;
+.barra, .nav, .footer {
   display: flex;
   flex-direction: row;
-  text-wrap: wrap;
   height: 100px;
-  width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 30px;
   position: fixed;
-  top: 0%;
-  z-index: 3;
   border: 2px solid #98e3d6; }
 
-.nav a {
-  color: #33767b;
-  text-decoration: none;
-  font-family: "Latops";
-  font-weight: bold; }
-
-ul {
-  list-style-type: none; }
-
-.ulc {
-  text-align: center; }
+.nav {
+  background-color: white;
+  text-wrap: wrap;
+  width: 100%;
+  font-size: 30px;
+  top: 0%;
+  z-index: 3; }
+  .nav a {
+    color: #33767b;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold; }
 
 .latido {
   animation: latido 3s infinite; }
@@ -61,14 +57,11 @@ p {
 /* Titulo */
 h1 {
   color: #d66d50;
-  font-family: "Latops";
+  font-family: "Rubik", sans-serif;
   font-size: 80px;
   font-weight: bold;
   text-align: center;
   margin: 30px; }
-
-.animado2 {
-  animation: latido 3s 1; }
 
 /* Pagina index */
 .vidimg {
@@ -154,26 +147,15 @@ h5 {
     height: 200px; } }
 
 .footer {
-  background-color: #98e3d6;
-  display: flex;
-  flex-direction: row;
-  height: 100px;
+  background-image: linear-gradient(to left, #d1eee9, #98e3d6);
   width: auto;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 30px;
-  font-family: "Latotitles";
-  color: white;
-  position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
-  border: 1px solid black;
-  align-items: center;
+  border: 2px solid #98e3d6;
   margin-top: auto; }
 
 .agranda {
   width: 400px; }
-
-.agranda:hover {
-  width: 500px; }
+  .agranda:hover {
+    width: 500px; }
