@@ -4,10 +4,23 @@
   font-size: 20;
   padding: 0 5px; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+@keyframes latido {
+  0% {
+    width: 40px; }
+  50% {
+    width: 60px; }
+  100% {
+    width: 40px; } }
+
 .nav {
   background-color: white;
   display: flex;
   flex-direction: row;
+  text-wrap: wrap;
   height: 100px;
   width: 100%;
   align-items: center;
@@ -30,9 +43,8 @@ ul {
 .ulc {
   text-align: center; }
 
-* {
-  margin: 0;
-  padding: 0; }
+.latido {
+  animation: latido 3s infinite; }
 
 body {
   background-color: white;
@@ -54,6 +66,9 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin: 30px; }
+
+.animado2 {
+  animation: latido 3s 1; }
 
 /* Pagina index */
 .vidimg {
@@ -156,3 +171,9 @@ h5 {
   border: 1px solid black;
   align-items: center;
   margin-top: auto; }
+
+.agranda {
+  width: 400px; }
+
+.agranda:hover {
+  width: 500px; }
