@@ -2,15 +2,12 @@ body{
     background-color: white;
     align-items: center;
     justify-content: space-evenly; 
-    margin-top: 100px;  
-    margin-bottom: 100px;
+   @include margins (100px, 100px, auto, auto);
 
 }
 
 p{
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "Latops";
+ @include margins(auto, auto, 20%, 20%);
 }
 
 /* Titulo */
@@ -28,8 +25,8 @@ h1{
 /* Pagina index */
 .vidimg{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include margins(auto, auto, auto, auto);
+    
 }
 
 /* Pagina miCuerpo */
@@ -42,7 +39,7 @@ h1{
       "eSkel eSkel pUl pUl"
       "eSkel eSkel rEn rEn"
       "cIrc gU hEm dIg";
-      margin-left: 7%;
+      @include margins(auto, auto, 7%, auto)
   }
 
 .imgg{
@@ -72,9 +69,7 @@ h1{
     color: black;
     font-size:medium;
     text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
-    
+    @include margins(auto, auto, 50px, 50px)    
   }
  
   .col-md-auto{
@@ -91,10 +86,7 @@ h5{
 
 }
   .accordion {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-   
+    @include margins(50px, 200px, 50px, 50px);
   }
 
   .accordion-button{

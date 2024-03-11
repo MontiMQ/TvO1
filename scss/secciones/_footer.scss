@@ -1,7 +1,6 @@
 .footer{
     @extend .barra;
-    background-image: linear-gradient(to left, $lblue, $turquiose);
-    width: auto; 
+    background-image: linear-gradient(to left, $lblue, $turquiose); 
     bottom: 0;
     right: 0;
     width: 100%;
