@@ -1,209 +1,175 @@
-@font-face { 
-    
-    font-family: "Latotitles";
-    src: url(../fonts/static/Rubik-Bold.ttf);
-    font-family: "Latops";
-    src: url(../fonts/static/Rubik-Light.ttf);
-} 
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+.fa-bell {
+  color: #29a5c7;
+  font-size: 20;
+  padding: 0 5px; }
 
-*{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-body{
-    background-color: rgb(195, 211, 226);
-    align-items: center;
-    justify-content: space-evenly; 
-    margin-top: 100px;  
-    margin-bottom: 100px;
+@keyframes latido {
+  0% {
+    width: 40px; }
+  50% {
+    width: 60px; }
+  100% {
+    width: 40px; } }
 
-}
+.barra, .nav, .footer {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  border: 2px solid #98e3d6; }
 
-p{
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "Latops";
-}
-
-/* Barra de navegacion */
-.nav{
-    background-color: white;
-    display:flex;
-    flex-direction: row;
-    height:100px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 30px;
-    position: fixed;
-    top: 0%;
-    z-index: 3;
-}
-
-.nav a{
-    color: rgba(8, 61, 97, 0.815);
+.nav {
+  background-color: white;
+  text-wrap: wrap;
+  width: 100%;
+  font-size: 30px;
+  top: 0%;
+  z-index: 3; }
+  .nav a {
+    color: #33767b;
     text-decoration: none;
-    font-family: "Latops";
-    font-weight:bold;
-}
+    font-family: "Raleway", sans-serif;
+    font-weight: bold; }
 
-ul{
-    list-style-type: none;
-}
+.latido {
+  animation: latido 3s infinite; }
 
-.ulc{
-    text-align: center;
-}
+body {
+  background-color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+p {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20%;
+  margin-right: 20%; }
 
 /* Titulo */
-h1{
-    color: rgb(206, 156, 162);
-    font-family: "Latops";
-    font-size: 80px;
-    font-weight: bold;
-    text-align: center;
-    margin: 30px;
-}
-
-
+h1 {
+  color: #d66d50;
+  font-family: "Rubik", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px; }
 
 /* Pagina index */
-.vidimg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+.vidimg {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Pagina miCuerpo */
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "eSkel eSkel pUl pUl"
-      "eSkel eSkel rEn rEn"
-      "cIrc gU hEm dIg";
-      margin-left: 7%;
-  }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "eSkel eSkel pUl pUl" "eSkel eSkel rEn rEn" "cIrc gU hEm dIg";
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 7%;
+  margin-right: auto; }
 
-.imgg{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
+.imgg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
-  .eSkel { grid-area: eSkel; }
-  
-  .cIrc { grid-area: cIrc; }
-  
-  .rEn { grid-area: rEn; }
-  
-  .gU { grid-area: gU; }
-  
-  .hEm { grid-area: hEm; }
-  
-  .dIg { grid-area: dIg; }
-  
-  .pUl { grid-area: pUl; }
-  
+.eSkel {
+  grid-area: eSkel; }
 
+.cIrc {
+  grid-area: cIrc; }
+
+.rEn {
+  grid-area: rEn; }
+
+.gU {
+  grid-area: gU; }
+
+.hEm {
+  grid-area: hEm; }
+
+.dIg {
+  grid-area: dIg; }
+
+.pUl {
+  grid-area: pUl; }
 
 /* Pagina miMente */
-  .container3 {
-    color: black;
-    font-size:medium;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-  }
- 
-  .col-md-auto{
-    margin-top: 40px;
-  }
+.container3 {
+  color: black;
+  font-size: medium;
+  text-align: justify;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 50px; }
 
-  .col{
-    margin-top: 40px;
-  }
+.col-md-auto {
+  margin-top: 40px; }
+
+.col {
+  margin-top: 40px; }
 
 /* Pagina Tips */
-h5{
-    font-size: 100px;
+h5 {
+  font-size: 100px; }
 
-}
-  .accordion {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-   
-  }
+.accordion {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 50px;
+  margin-right: 50px; }
 
-  .accordion-button{
-    position: inherit;
-    z-index: -3;
-  }
- 
+.accordion-button {
+  position: inherit;
+  z-index: -3; }
 
+@media only screen and (max-width: 767px) {
+  body h1 {
+    font: size 60px; } }
 
-@media (max-width: 800px){
-    body {
-        margin-top: 200px;
-    }
-}
-@media (max-width:700px ){
-           .container {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(7, 1fr);
-            grid-template-areas:
-                "eSkel"
-                "pUl"
-                "rEn"
-                "cIrc"
-                "gU"
-                "hEm"
-                "dIg"
-                   
-          
-        }
-   
-}
+@media (max-width: 800px) {
+  body {
+    margin-top: 200px; } }
 
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "eSkel" "pUl" "rEn" "cIrc" "gU" "hEm" "dIg"; } }
 
+@media (max-width: 794px) {
+  .nav {
+    height: 200px; } }
 
+.footer {
+  background-image: linear-gradient(to left, white, #d1eee9, #98e3d6);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border: 2px solid #98e3d6;
+  margin-top: auto; }
 
-@media (max-width:794px ){
-    
-        .nav {
-            height: 200px;    
-          
-        }
-   
-}
-
-
-/* Footer */
-.footer{
-    background-color:rgba(8, 61, 97, 0.815);
-    display:flex;
-    flex-direction: row;
-    height: 100px;
-    width: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 30px;
-    font-family: "Latotitles";
-    color: white;
-    position: fixed
-;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    border: 1px solid black;
-    align-items: center;
-    margin-top: auto;
-           
-     
-    
-}
+.agranda {
+  width: 400px; }
+  .agranda:hover {
+    width: 500px; }

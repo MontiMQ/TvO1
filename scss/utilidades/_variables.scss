@@ -1,0 +1,23 @@
+// Paleta de Colores
+$teal:#33767b;
+$ocean:#015a6c;
+$terracotta: #d66d50;
+$peach: #fdb9aa;
+$turquiose:#98e3d6;
+$lblue:#d1eee9;
+
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
+
+$fuente-nav: "Raleway", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+$fuente-titulo: "Rubik", sans-serif;
+
+//Iconos
+.fa-bell{
+    color: rgb(41, 165, 199);
+    font-size: 20;
+    padding: 0 5px;
+}
