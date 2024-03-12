@@ -110,35 +110,6 @@ h5 {
   z-index: -3;
 }
 
-$vista: mobile;
-
-body {
-  @if $vista ==desktop {
-    @media only screen and (min-width:1024px) {
-      h1 {
-        font: size 80px;
-      }
-
-    }
-  }
-
-  @else if $vista ==mobile {
-    @media only screen and (max-width:767px) {
-      h1 {
-        font: size 60px;
-      }
-
-    }
-  }
-
-  @else {
-    h1 {
-      font-size: 34px;
-    }
-
-  }
-}
-
 @media (max-width: 800px) {
   body {
     margin-top: 200px;
