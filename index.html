@@ -21,15 +21,31 @@
 
 <body>
 
-    <!-- Barra de navegacion -->
-    <nav class="nav">
-        <a class="nav-link active" aria-current="page" href="./pages/miCuerpo.html">Mi Cuerpo</a>
-        <a class="nav-link" href="./pages/medicaciones.html">Medicaciones</a>
-        <a href="./index.html">
-            <img src="./img/TVo logo.png" class="latido" width="60" alt="TVo logo"></a>
-        <a class="nav-link" href="./pages/miMente.html">Mi mente</a>
-        <a class="nav-link" href="./pages/tips.html">Tips del dia</a>
-    </nav>
+     <!-- Barra de navegacion -->
+     <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="../img/TVo logo.png" class="latido" width="60" alt="TVo logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/miCuerpo.html">Mi cuerpo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/medicaciones.html">Medicaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/miMente.html">Mi mente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/tips.html">Tips</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 
     <main class="main-index">
@@ -45,11 +61,16 @@
             allowfullscreen>
 
         </iframe>
-
+        <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname">
+        </form>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer fixed-bottom">
         <img src="./img/logos en fila.png" class="agranda" width="400" alt="Redes">
     </footer>
 

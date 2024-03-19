@@ -1,8 +1,12 @@
 body {
   background-color: white;
+ 
   align-items: center;
   justify-content: space-evenly;
-  @include margins (100px, 100px, auto, auto);
+  
+
+
+  @include margins (0px, 0px, auto, auto);
 
 }
 
@@ -40,7 +44,7 @@ h1 {
     "eSkel eSkel pUl pUl"
     "eSkel eSkel rEn rEn"
     "cIrc gU hEm dIg";
-  @include margins(auto, auto, 7%, auto)
+  @include margins(auto, 150px, 7%, auto)
 }
 
 .imgg {
@@ -84,7 +88,7 @@ h1 {
   color: black;
   font-size: medium;
   text-align: justify;
-  @include margins(auto, auto, 50px, 50px)
+  @include margins(auto, 150px, 50px, 50px)
 }
 
 .col-md-auto {
@@ -101,6 +105,10 @@ h5 {
 
 }
 
+.carousel{
+@include margins(auto, 150px, auto, auto)
+}
+// Pagina medicaciones
 .accordion {
   @include margins(50px, 200px, 50px, 50px);
 }
@@ -110,41 +118,8 @@ h5 {
   z-index: -3;
 }
 
-$vista: mobile;
 
-body {
-  @if $vista ==desktop {
-    @media only screen and (min-width:1024px) {
-      h1 {
-        font: size 80px;
-      }
 
-    }
-  }
-
-  @else if $vista ==mobile {
-    @media only screen and (max-width:767px) {
-      h1 {
-        font: size 60px;
-      }
-
-    }
-  }
-
-  @else {
-    h1 {
-      font-size: 34px;
-    }
-
-  }
-}
-
-@media (max-width: 800px) {
-  body {
-    margin-top: 200px;
-
-  }
-}
 
 @media (max-width:700px) {
   .container {
@@ -165,13 +140,12 @@ body {
 }
 
 
-
-
-@media (max-width:794px) {
-
-  .nav {
-    height: 200px;
-
-  }
+@media (max-width: 767px) {
+  .animate__animated{ 
+  animation: none;}
 
 }
+
+
+
+
