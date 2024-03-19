@@ -17,16 +17,16 @@
   100% {
     width: 40px; } }
 
-.barra, .nav, .footer {
+.barra, .navbar, .footer {
   display: flex;
   flex-direction: row;
   height: 100px;
   align-items: center;
-  justify-content: space-evenly;
-  border: 2px solid #98e3d6; }
+  justify-content: right; }
 
-.nav {
+.navbar {
   background-color: white;
+  opacity: 0.9;
   text-wrap: wrap;
   width: 100%;
   font-size: 30px;
@@ -66,20 +66,34 @@ p {
   margin-left: 20%;
   margin-right: 20%; }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2; }
+
 /* Titulo */
 h1 {
-  color: #d66d50;
+  color: white;
   font-family: "Rubik", sans-serif;
-  font-size: 80px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin: 30px; }
 
 /* Pagina index */
-.vidimg {
-  display: block;
-  margin-top: 100px;
-  margin-bottom: auto;
+.login {
+  display: flex;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -169,11 +183,9 @@ h5 {
     animation: none; } }
 
 .footer {
-  background-image: linear-gradient(to left, white, #d1eee9, #98e3d6);
   bottom: 0;
   right: 0;
   width: 100%;
-  border: 2px solid #98e3d6;
   margin-top: auto; }
 
 .agranda {

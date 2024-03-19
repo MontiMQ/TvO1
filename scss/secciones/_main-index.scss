@@ -14,11 +14,20 @@ p {
   @include margins(auto, auto, 20%, 20%);
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -2;
+}
+
 /* Titulo */
 h1 {
-  color: $terracotta;
+  color: white;
   font-family: $fuente-titulo;
-  font-size: 80px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin: 30px;
@@ -27,10 +36,16 @@ h1 {
 
 
 /* Pagina index */
-.vidimg {
-  display: block;
-  @include margins(100px, auto, auto, auto);
-
+.login {
+  display: flex;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  height: 200px;
+  @include margins(10%, 10%, auto, auto)
+  
 }
 
 /* Pagina miCuerpo */
@@ -145,6 +160,8 @@ h5 {
   animation: none;}
 
 }
+
+
 
 
 

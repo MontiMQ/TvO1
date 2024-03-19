@@ -1,6 +1,7 @@
-.nav{
+.navbar{
     @extend .barra;
     background-color: white;
+    opacity: 0.9;
     text-wrap: wrap;
     width: 100%;  
     font-size: 30px;
