@@ -10,6 +10,7 @@ body {
 
 }
 
+
 p {
   @include margins(auto, auto, 20%, 20%);
 }
@@ -25,7 +26,7 @@ p {
 
 /* Titulo */
 h1 {
-  color: white;
+  color: black;
   font-family: $fuente-titulo;
   font-size: 20px;
   font-weight: bold;
@@ -38,16 +39,29 @@ h1 {
 /* Pagina index */
 .login {
   display: flex;
+  flex-direction: row;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.98;
   color: white;
   align-content: center;
   justify-content: center;
   height: 200px;
-  @include margins(10%, 10%, auto, auto)
+  width: 600px;
+  padding-top: 35px;
+  padding-right: 25px;
+  @include margins(10%, 10%, 500px, 500px)
+  
   
 }
 
+
+
+.miMen {
+  
+  background-color: white;
+  opacity: 0.7;
+  width: 200px;
+}
 /* Pagina miCuerpo */
 .container {
   display: grid;
@@ -114,24 +128,23 @@ h1 {
   margin-top: 40px;
 }
 
+.preguntas {
+  color: black;
+  font-size: xx-large;
+}
 /* Pagina Tips */
 h5 {
   font-size: 100px;
 
 }
 
+
+
 .carousel{
 @include margins(auto, 150px, auto, auto)
 }
 // Pagina medicaciones
-.accordion {
-  @include margins(50px, 200px, 50px, 50px);
-}
 
-.accordion-button {
-  position: inherit;
-  z-index: -3;
-}
 
 
 

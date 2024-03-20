@@ -1,0 +1,28 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
+
+<div style="width: 900px; height: 400px;">
+  <canvas id="myChart"></canvas>
+</div>
+<script>
+  let labels = ['Cat', 'Dog', 'Bird'];
+  let itemData = [550, 300, 250];
+
+  const data = {
+    labels:labels,
+    datasets: [{
+      data: itemData,
+      backgroundColor: 'rgb(66,221,245)'
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data
+  };
+
+  const chart = new Chart(
+    document.getElementById("myChart"),
+    config
+  );
+
+</script>

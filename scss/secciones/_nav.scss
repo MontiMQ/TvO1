@@ -24,14 +24,3 @@
   padding-left:30px;
   padding-right:30px;
 }
-
-.latido{
-    animation: latido 3s infinite;
-   
-  }
-
-  @media (max-width: 767px) {
-    .latido{ 
-    animation: none;}
-
-  }
