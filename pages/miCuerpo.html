@@ -2,30 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
-    <link rel="manifest" href="../img/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="manifest" href="../img/site.webmanifest">
 
-    <title>Mi cuerpo TVo</title>
+  <title>Mi cuerpo TVo</title>
 </head>
 
 <body>
 
-   <!-- Barra de navegacion -->
-   <nav class="navbar navbar-expand-md bg-body-tertiary">
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html"><img src="../img/TVo logo.png" class="latido" width="60" alt="TVo logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="../index.html"><img src="../img/TVo logo.png" class="latido" width="60"
+          alt="TVo logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,41 +50,143 @@
     </div>
   </nav>
 
-    <main class="main-flex">
+  <main class="main-flex">
 
-        <!-- Titulo -->
-        <h1 class="animate__animated animate__backInDown">Mi cuerpo</h1>
+    <!-- Titulo -->
+    <h1 class="animate__animated animate__backInDown">Mi cuerpo</h1>
 
-        <!-- Video -->
- <video autoplay muted loop id="myVideo">
-  <source src="../img/videodoc.mp4" type="video/mp4" alt="VideoDr">
-  </video>
+    <!-- Video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="../img/videodoc.mp4" type="video/mp4" alt="VideoDr">
+    </video>
 
-        <!-- Grid -->
-        <div class="container">
-            <div class="eSkel"><img src="../img/huesos.jpg" class="imgg" alt="Esqueleto"></div>
-            <div class="cIrc"><img src="../img/circ.jpg" class="imgg" alt="Circulacion"></div>
-            <div class="rEn"><img src="../img/kidney.jpg.webp" class="imgg" alt="Renal"></div>
-            <div class="gU"><img src="../img/urin.jpg.webp" class="imgg" alt="Urinario"></div>
-            <div class="hEm"><img src="../img/sangre.jpg.webp" class="imgg" alt="Hematologia"></div>
-            <div class="dIg"><img src="../img/dig.jpg.webp" class="imgg" alt="Digestivo"></div>
-            <div class="pUl"><img src="../img/pulm.jpg" class="imgg" alt="Pulmonar"></div>
+    <!-- Grid -->
+    <div class="profile">
+      <div class="row">
+        <div class="col text-center">
+          <div class="foto">
+            <img src="../img/HS.jpeg" alt="Headshot" style="width:10%">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+
+
+          </div>
         </div>
-    </main>
+        <div class="col d-flex justify-content-center">
 
-    <!-- Footer -->
-    <footer class="footer">
-        <img src="../img/logos en fila.png" class="agranda" width="400" alt="Redes">
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <div class="row">
+      <div class="col d-flex justify-content-center"><canvas id="myChart" style="width:200px; max-width:500px"></canvas>
+
+        <script>
+          const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+          const yValues = [55, 49, 44, 24, 15];
+          const barColors = ["red", "green", "blue", "orange", "brown"];
+
+          new Chart("myChart", {
+            type: "bar",
+            data: {
+              labels: xValues,
+              datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+              }]
+            },
+            options: {
+              legend: { display: false },
+              title: {
+                display: true,
+                text: "World Wine Production 2018"
+              }
+            }
+          });
+        </script>
+      </div>
+
+      <div class="col d-flex justify-content-center"><canvas id="myChart2" style="width:200px;max-width:600px"></canvas>
+
+        <script>
+          const zValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+          const aValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+          new Chart("myChart2", {
+            type: "line",
+            data: {
+              labels: xValues,
+              datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: aValues
+              }]
+            },
+            options: {
+              legend: { display: false },
+              scales: {
+                yAxes: [{ ticks: { min: 6, max: 16 } }],
+              }
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="../img/logos en fila.png" class="agranda" width="400" alt="Redes">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
 
 </body>
 
