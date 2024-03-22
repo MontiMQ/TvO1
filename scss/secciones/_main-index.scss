@@ -34,44 +34,62 @@ h1 {
   margin: 30px;
 }
 
-
+h2 {
+  color: white;
+  font-family: $fuente-titulo;
+  font-size: 40px;
+  @include margins(100px, 100px, auto, auto);
+}
 
 /* Pagina index */
 .login {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  
   background-color: black;
-  opacity: 0.98;
-  color: white;
-  align-content: center;
-  justify-content: center;
-  height: 200px;
-  width: 600px;
-  padding-top: 35px;
-  padding-right: 25px;
-  @include margins(10%, 10%, 500px, 500px)
-  
-  
-}
-
-
-
-.miMen {
-  
-  background-color: white;
   opacity: 0.7;
-  width: 200px;
+  color: white;
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ width:80%;
+  height: 40%;
+  align-self: center;
+  border: 2px solid;
+  background-color: #eee;
+  
+
+.lt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+ 
+  
+  
+}
+.form-control{
+  margin-bottom: 100px;
+  width: 70%;
+}
+
+
 /* Pagina miCuerpo */
 .profile {
   background-color: white;
   opacity: 0.8;
-  @include margins (auto, auto, 20%, 20%);
+  @include margins (5%, auto, 10%, 10%);
   padding: 50px;
   border-radius: 25px;
 
 }
 
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+  padding: 30px;
+}
 
 /* Pagina miMente */
 .container3 {
