@@ -118,6 +118,15 @@ table, th, td {
   text-align: center;
   padding: 30px; }
 
+.pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px; }
+
+.med {
+  list-style-type: none; }
+
 /* Pagina miMente */
 .container3 {
   color: black;
