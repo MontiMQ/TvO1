@@ -1,19 +1,30 @@
+.pills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   
   /* Remove margins and padding from the list */
   ul.lista {
-    margin: 20%;
+    margin: 25%;
     padding: 0;
+    text-align: center;
+    
   }
   
   /* Style the list items */
   ul.lista li {
     cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
+    position:relative;
+    padding-top:  12px;
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    
   
     /* make the list items unselectable */
     -webkit-user-select: none;

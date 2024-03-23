@@ -30,13 +30,16 @@
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+  background-color: white; }
 
 .navbar-nav > li {
   padding-left: 30px;
   padding-right: 30px; }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   align-items: center;
   justify-content: space-evenly;
@@ -72,8 +75,8 @@ h2 {
   color: white;
   font-family: "Rubik", sans-serif;
   font-size: 40px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -88,29 +91,40 @@ h2 {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 80%;
+  width: 90%;
   height: 40%;
   align-self: center;
-  border: 2px solid;
-  background-color: #eee; }
-  .login .lt {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+  margin-top: 10%;
+  margin-bottom: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px; }
+
+.lt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 .form-control {
-  margin-bottom: 100px;
+  margin-top: 5%;
+  margin-bottom: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
   width: 70%; }
 
 /* Pagina miCuerpo */
 .profile {
   background-color: white;
   opacity: 0.8;
-  margin-top: 5%;
-  margin-bottom: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 50px;
+  padding: 10%px;
   border-radius: 25px; }
 
 table, th, td {
@@ -121,11 +135,12 @@ table, th, td {
 .pills {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 100px; }
+  align-items: center; }
 
 .med {
-  list-style-type: none; }
+  text-align: center;
+  list-style-type: none;
+  height: 100px; }
 
 /* Pagina miMente */
 .container3 {
@@ -161,19 +176,28 @@ h5 {
   .animate__animated {
     animation: none; } }
 
+.pills {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /* Remove margins and padding from the list */
 ul.lista {
-  margin: 20%;
-  padding: 0; }
+  margin: 25%;
+  padding: 0;
+  text-align: center; }
 
 /* Style the list items */
 ul.lista li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding-top: 12px;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -244,19 +268,28 @@ ul.lista li.checked::before {
 .addBtn:hover {
   background-color: #bbb; }
 
+.pills {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /* Remove margins and padding from the list */
 ul.lista {
-  margin: 20%;
-  padding: 0; }
+  margin: 25%;
+  padding: 0;
+  text-align: center; }
 
 /* Style the list items */
 ul.lista li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding-top: 12px;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
