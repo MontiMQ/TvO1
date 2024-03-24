@@ -1,20 +1,27 @@
-.nav{
+.navbar{
     @extend .barra;
     background-color: white;
+    opacity: 0.9;
     text-wrap: wrap;
     width: 100%;  
     font-size: 30px;
-    top: 0%;
+    top: 0px;
     z-index: 3;
         
-    a{
-    color: $teal;
+   
+}
+
+.container-fluid{
+  color: $teal;
     text-decoration: none;
     font-family: $fuente-nav;
     font-weight:bold;
-}
+    font-size: 20px;
+    background-color: white;
+    
 }
 
-.latido{
-    animation: latido 3s infinite;
-  }
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}

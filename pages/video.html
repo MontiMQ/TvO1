@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  color: black;
+  width: 100%;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left:  0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 633px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 633px) {
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="../img/videodoc.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<div class="content">
+    <div class="navbar" id="myNavbar">
+        <a href="../index.html"><img src="../img/TVo logo.png" class="latido" width="60" alt="TVo logo"></a>
+           </a>
+        <a href="../pages/miCuerpo.html">Mi cuerpo</a>
+        <a href="../pages/medicaciones.html">Medicaciones</a>
+        <a href="../pages/miMente.html">Mi mente</a>
+        <a href="../pages/tips.html">Tips</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>Yo cuido mi salud!</h1>
+  
+</div>
+
+<script>
+/* Toggle between adding and removing the "responsive" class to the navbar when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+</body>
+</html>
+

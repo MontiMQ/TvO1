@@ -1,10 +1,10 @@
 .footer{
     @extend .barra;
-    background-image: linear-gradient(to left, white, $lblue, $turquiose); 
+    
     bottom: 0;
     right: 0;
     width: 100%;
-    border: 2px solid $turquiose;
+    
     margin-top: auto;
 }
 
