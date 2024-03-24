@@ -94,8 +94,8 @@ h2 {
 .profile {
   background-color: white;
   opacity: 0.8;
-
-  padding: 10%px;
+  
+  padding: 2%;
   border-radius: 25px;
   
 
@@ -107,55 +107,31 @@ table, th, td {
   padding: 30px;
 }
 
-// Paginas medicaciones
-
-.pills{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.med {
-  
-  text-align: center;
-  list-style-type: none;
-  height: 100px;
-}
-
 
 
 /* Pagina miMente */
-.container3 {
-  color: black;
-  font-size: medium;
-  text-align: justify;
-  @include margins(auto, 150px, 50px, 50px)
-}
 
-.col-md-auto {
-  margin-top: 40px;
-}
-
-.col {
-  margin-top: 40px;
-}
 
 .preguntas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   color: black;
   font-size: xx-large;
 }
+
+
+
 /* Pagina Tips */
 h5 {
   font-size: 100px;
 
 }
 
-
-
 .carousel{
 @include margins(auto, 150px, auto, auto)
 }
-// Pagina medicaciones
+
 
 
 
