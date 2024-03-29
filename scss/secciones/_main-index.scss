@@ -1,17 +1,11 @@
 body {
- display:flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   background-color: white;
- 
   align-items: center;
   justify-content: space-evenly;
-  
-
-
   @include margins (0px, 0px, auto, auto);
-
 }
-
 
 p {
   @include margins(auto, auto, 20%, 20%);
@@ -21,10 +15,9 @@ p {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
   z-index: -2;
-
 }
 
 /* Titulo */
@@ -34,8 +27,10 @@ h1 {
   font-size: 80px;
   font-weight: bold;
   background-color: black;
+  opacity: 0.7;
   text-align: center;
   margin: 30px;
+  border-radius: 25px;
 }
 
 h2 {
@@ -45,7 +40,7 @@ h2 {
   @include margins(50px, 50px, auto, auto);
 }
 
-h3{
+h3 {
   color: black;
   font-size: 80px;
 }
@@ -54,30 +49,29 @@ h3{
 .login {
   display: flex;
   flex-direction: column;
-  
   background-color: black;
   opacity: 0.7;
   color: white;
   text-align: center;
- justify-content: center;
- align-items: center;
- align-content: center;
- width:90%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
   height: 40%;
   align-self: center;
-  @include margins(10%,40%, auto, auto);
+  @include margins(10%, 40%, auto, auto);
   border-radius: 25px;
-  
+
 }
 
-.lt{
+.lt {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,12 +79,7 @@ h3{
   text-align: center;
 }
 
-
- 
-  
-  
-
-.form-control{
+.form-control {
   @include margins (5%, 20%, 0%, 0%);
   width: 70%;
 }
@@ -100,14 +89,15 @@ h3{
 .profile {
   background-color: white;
   opacity: 0.8;
-  
   padding: 2%;
   border-radius: 25px;
-  
+
 
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid;
   text-align: center;
   padding: 30px;
@@ -136,42 +126,28 @@ table, th, td {
   justify-content: space-between;
 }
 
-.submitmm{
+.submitmm {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  @include margins (15%, 20%, auto,auto)
+  @include margins (15%, 20%, auto, auto)
 }
 
 /* Pagina Tips */
 h5 {
   font-size: 100px;
-  color:white;
+  color: white;
   background-color: black;
 
 }
 
-.carousel{
-@include margins(auto, 150px, auto, auto)
+.carousel {
+  @include margins(auto, 150px, auto, auto)
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 767px) {
-  .animate__animated{ 
-  animation: none;}
+  .animate__animated {
+    animation: none;
+  }
 
 }
-
-
-
-
-
-
-
